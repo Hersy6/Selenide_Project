@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Final" >
+    <listeners>
+
+    </listeners>
+
+    <test name="group1">
+       <groups>
+           <define name="Resgression1">
+               <include name="Test1"/>
+               <include name="Test2"/>
+           </define>
+           <define name="Resgression2">
+               <include name="Test1"/>
+               <include name="Test3"/>
+               <include name="Test4"/>
+           </define>
+       </groups>
+
+        <classes>
+            <class name="FinalTests"/>
+        </classes>
+
+    </test>
+
+</suite>
